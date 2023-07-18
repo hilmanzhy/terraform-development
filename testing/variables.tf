@@ -33,7 +33,39 @@ variable "subnet_cidr_block" {
 }
 
 variable "tfvars_file" {
-  description = "Path ke file terraform.tfvars"
+  description = "testing/terraform.tfvars"
   type        = string
   default     = "terraform.tfvars"
+}
+
+variable "instance_count" {
+  description = "Jumlah instance yang akan dibuat"
+  type        = number
+  default     = 1
+}
+
+variable "ami" {
+  description = "AMI ID untuk instance EC2"
+  type        = string
+}
+
+variable "instance_type" {
+  description = "Tipe instance EC2"
+  type        = string
+}
+
+variable "subnet_id" {
+  description = "ID subnet untuk instance EC2"
+  type        = string
+}
+
+variable "key_pair" {
+  description = "Nama key pair untuk instance EC2"
+  type        = string
+}
+
+variable "tags" {
+  description = "Tags untuk instance EC2"
+  type        = map(string)
+  default     = {}
 }
