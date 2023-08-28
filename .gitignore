@@ -1,4 +1,5 @@
 # Local .terraform directories
+poc/
 **/.terraform/*
 **/.terraform.lock.hcl
 # .tfstate files
