@@ -1,5 +1,5 @@
 module "vpc" {
-  source              = "../modules/poc/create_vpc"
+  source              = "../modules/gcp/create_vpc"
   project_id          = var.project_id
   region              = var.vpc_region
   vpc_name            = var.vpc_name
@@ -10,7 +10,7 @@ module "vpc" {
 }
 
 module "serverless_connector" {
-  source              = "../modules/poc/create_vpc"
+  source              = "../modules/gcp/create_vpc"
   vpc_name            = var.vpc_name
   serverless_name     = var.serverless_name
   project_id          = var.project_id

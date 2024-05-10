@@ -1,6 +1,6 @@
 
 module "cloudsql" {
-  source       = "../modules/poc/cloud_sql"
+  source       = "../modules/gcp/cloud_sql"
   project_id = var.project_id
   region     = var.vpc_region
   db_name    = var.db_name

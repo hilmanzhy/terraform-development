@@ -1,11 +1,10 @@
 locals {
-    project = "perdana-wahana-sentosa-staging"
+    project = "YOUR-PROJECT"
     region = "asia-southeast2"
     cloud_run_default_envs = {
         "NODE_ENV" = "production"
         "TARGET_ENV" = "staging"
     }
-#    cloud_build_worker_pool = "projects/perdana-wahana-sentosa-staging/locations/asia-southeast2/workerPools/pws-cloudbuild-worker-pool"
 }
 
 provider "google" {
